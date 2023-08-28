@@ -241,7 +241,7 @@ const TaskList = (props) => {
           <button
             onClick={() => {
               
-              handleOpenModal();
+              handleOpenModal()
               setEdit(false)
             }}
             className=" fixed top-[87%] left-[90%] h-20 w-20 text-5xl items-center  bg-[#FFB255] rounded-full "
