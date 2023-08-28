@@ -12,7 +12,7 @@ const SearchBar = (props) => {
     });
    setName(response.data.username[0].name)
   
-  };
+  }
   useEffect(() => {
     getUserData()
 

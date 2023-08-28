@@ -28,7 +28,7 @@ const TaskList = (props) => {
     }
 
     getData();
-  }, []);
+  }, [])
 
   const handleOpenModal = () => {
     setModalIsOpen(true);
