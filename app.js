@@ -26,7 +26,7 @@ const corsOptions = {
   optionsSuccessStatus: 204 // Set the status code for preflight requests
 };
 
-app.use(cors());
+app.use(cors({corsOptions}));
 
 app.use(bodyParser.json({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
