@@ -7,7 +7,7 @@ const SearchBar = (props) => {
   const [name, setName] = useState("");
 
   const getUserData = async () => {
-    const response = await axios.get("http://54.211.203.191:4000/username", {
+    const response = await axios.get("http://34.230.16.104:5000/username", {
       headers: { Authorization: localStorage.getItem("token") },
     });
    setName(response.data.username[0].name)
