@@ -19,6 +19,12 @@ const taskRoutes = require("./routes/taskRoutes");
 const User = require("./Models/user");
 
 const Tasks = require("./Models/task");
+const corsOptions = {
+  origin: 'https://task-management-ten-iota.vercel.app/',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Include cookies in CORS requests (if applicable)
+  optionsSuccessStatus: 204 // Set the status code for preflight requests
+};
 
 app.use(cors());
 
