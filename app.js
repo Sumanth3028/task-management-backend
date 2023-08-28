@@ -23,16 +23,16 @@ const Tasks = require("./Models/task");
 app.use(cors());
 
 app.use(bodyParser.json({ extended: false }));
-app.use(express.static(path.join(__dirname, "public/build")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(userRoutes);
 app.use(taskRoutes);
 
-app.use((req, res) => {
-  console.log("req",req.url)
-  res.sendFile((path.join(__dirname, "public/build/index.html")))
+// app.use((req, res) => {
+//   console.log("req",req.url)
+//   res.sendFile((path.join(__dirname, "public/build/index.html")))
   
-});
+// });
 
 
 Sequelize.sync()
